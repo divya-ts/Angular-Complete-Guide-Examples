@@ -1,5 +1,11 @@
 <!-- Property Binding Syntax []  -->
 <!-- Here we have used ! just to reverse the meaning of that allowNewServer. We can also remove it no problem -->
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+<!-- Event Binding Syntax (event). You can either write the code or pass the method. Here we have passed onCreateServer() method -->
+<button 
+class="btn btn-primary" 
+[disabled]="!allowNewServer"
+(click)="onCreateServer()">Add Server</button>
+
+<p>{{serverCreationStatus}}</p>
 
 <app-server></app-server>
