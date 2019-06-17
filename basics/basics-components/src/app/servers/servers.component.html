@@ -2,13 +2,19 @@
 <!-- Here we have used ! just to reverse the meaning of that allowNewServer. We can also remove it no problem -->
 <!-- Event Binding Syntax (event). You can either write the code or pass the method. Here we have passed onCreateServer() method -->
 <!-- (input) is the normal html DOM and $event is angular feature wwhich is used to capture and fetch input datas. <HTMLInputElement> is an explicit casting used to inform typescript that we are using this htmlinputelement -->
+<!-- [(directive)] two-way-binding syntax-->
 
 <label>Server Name</label>
+
+<!-- <input
+    type = "text"
+    class = "form-control"
+    (input) = "onUpdateServerName($event)"> -->
 
 <input
     type = "text"
     class = "form-control"
-    (input) = "onUpdateServerName($event)">
+    [(ngModel)] = "serverName">
 
 <p>{{serverName}}</p>
 
