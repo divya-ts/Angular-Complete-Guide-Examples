@@ -35,4 +35,11 @@ In this course, we use version 3 of the framework, install it via `npm install -
 
 Additionally, when using a project created with Angular CLI 6+ (check via ng -v ), you'll have an angular.json  file instead of an `.angular-cli.json`  file. In that file, you still need to add Bootstrap to the styles[]  array as shown in the next video, but the path should be node_modules/bootstrap/dist/css/bootstrap.min.css , NOT `../node_modules/bootstrap/dist/css/bootstrap.min.css` . The leading `../` must not be included.
 
------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+## Alternative Non-Collapsable Navigatio Bar
+
+The way we added it, the Navbar will collapse on smaller screens. Since we didn't implement a Hamburger menu, that means that there's no way of accessing our links on smaller screens.
+
+You can either add such a menu on your own, or you replace collapse navbar-collapse  with just navbar-default 
+
+------------------------------------------------------------------------------------------------------
